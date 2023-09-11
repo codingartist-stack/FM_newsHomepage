@@ -138,22 +138,20 @@ a:hover {
   color: var(--clr-primary400);
 }
 
-.mobileIcon {
-  /* display: none; */
-  font-family: 'LinearIcons';
-  font-size: 2rem;
-  padding: 0.5rem 1rem;
+.mobileToggle {
+  display: none;
 }
 
 @media screen and (max-width: 35rem) {
   .primaryNav {
     position: fixed;
-    /* align-items: start; */
+    align-items: start;
     background-color: var(--clr-neutral100);
     inset: 30%;
     height: 100%;
     width: 100%;
     top: 0;
+    padding-top: min(20vh, 10rem);
   }
   .navBackgroup {
     position: fixed;
@@ -169,9 +167,14 @@ a:hover {
     align-items: start;
   }
 
-  .mobileIcon {
+  .mobileToggle {
+    display: block;
+    font-family: 'LinearIcons';
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
     position: fixed;
     top: 2rem;
     right: 2rem;
+    z-index: 99;
   }
 }
