@@ -100,3 +100,33 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+.linear {
+  font-family: 'LinearIcons';
+}
+
+body {
+  padding: 1rem;
+  font-family: var(--fontFamily);
+}
+
+.flexGroup {
+  display: flex;
+  gap: 2rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-neutral500);
+}
+
+a:hover {
+  color: var(--clr-primary400);
+}
+
+@media screen and (min-width: 35rem) {
+}
