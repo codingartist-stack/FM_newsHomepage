@@ -7,9 +7,15 @@ navToggle.addEventListener('click', () => {
 
   if (visibility === 'false') {
     primaryNav.setAttribute('data-visible', true);
+    navToggle.setAttribute('aria-expanded', true);
     navBackground.setAttribute('data-visible', true);
+
+    navToggle.textContent = 'cross';
   } else {
     primaryNav.setAttribute('data-visible', false);
+    navToggle.setAttribute('aria-expanded', false);
     navBackground.setAttribute('data-visible', false);
+
+    navToggle.textContent = 'menu';
   }
 });

@@ -101,6 +101,8 @@ h6 {
   isolation: isolate;
 }
 
+/* Project Styles */
+
 body {
   padding: 1.5rem;
   font-family: var(--fontFamily);
@@ -142,6 +144,9 @@ a:hover {
 
 .mobileToggle {
   display: none;
+  border: none;
+  background-color: white;
+  border-radius: 10px;
 }
 
 .navBackgroup {
@@ -162,22 +167,27 @@ a:hover {
     padding-left: min(10vw, 3rem);
 
     transform: translateX(100%);
+    transition: transform 350ms ease-in-out;
   }
   .navBackgroup {
     display: block;
     position: fixed;
-    background-color: hsl(240, 100%, 5%, 0.5);
+    background-color: hsl(240, 100%, 5%, 0);
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
 
-    transform: translateX(100%);
+    transition: background-color 350ms ease-out;
   }
 
   .primaryNav[data-visible='true'],
   .navBackgroup[data-visible='true'] {
-    transform: translateX(100%);
+    transform: translateX(0);
+  }
+
+  .navBackgroup[data-visible='true'] {
+    background-color: hsl(240, 100%, 5%, 0.6);
   }
 
   .mobileToggle {
