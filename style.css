@@ -104,6 +104,8 @@ h6 {
 body {
   padding: 1.5rem;
   font-family: var(--fontFamily);
+
+  overflow-x: hidden;
 }
 
 header,
@@ -158,6 +160,8 @@ a:hover {
     top: 0;
     padding-top: min(20vh, 10rem);
     padding-left: min(10vw, 3rem);
+
+    transform: translateX(100%);
   }
   .navBackgroup {
     display: block;
@@ -167,6 +171,13 @@ a:hover {
     width: 100%;
     top: 0;
     left: 0;
+
+    transform: translateX(100%);
+  }
+
+  .primaryNav[data-visible='true'],
+  .navBackgroup[data-visible='true'] {
+    transform: translateX(100%);
   }
 
   .mobileToggle {
