@@ -195,10 +195,6 @@ a:hover {
     font-family: 'LinearIcons';
     font-size: 2rem;
     padding: 0.5rem 1rem;
-    /* position: fixed; */
-
-    /* top: 2rem;
-    right: 2rem; */
     z-index: 99;
   }
 }
