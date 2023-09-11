@@ -101,12 +101,8 @@ h6 {
   isolation: isolate;
 }
 
-.linear {
-  font-family: 'LinearIcons';
-}
-
 body {
-  padding: 1rem;
+  padding: 1.5rem;
   font-family: var(--fontFamily);
 }
 
@@ -115,7 +111,7 @@ header,
   display: flex;
   gap: 1.5rem;
   align-items: center;
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
 header {
@@ -144,7 +140,9 @@ a:hover {
 
 .mobileIcon {
   /* display: none; */
+  font-family: 'LinearIcons';
   font-size: 2rem;
+  padding: 0.5rem 1rem;
 }
 
 @media screen and (max-width: 35rem) {
@@ -153,15 +151,15 @@ a:hover {
     /* align-items: start; */
     background-color: var(--clr-neutral100);
     inset: 30%;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     top: 0;
   }
   .navBackgroup {
     position: fixed;
     background-color: hsl(240, 100%, 5%, 0.5);
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     top: 0;
     left: 0;
   }
