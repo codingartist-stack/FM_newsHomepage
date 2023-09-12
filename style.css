@@ -104,10 +104,16 @@ h6 {
 /* Project Styles */
 
 body {
+  display: grid;
+  place-items: center;
   padding: 1rem 2rem;
   font-family: var(--fontFamily);
 
   overflow-x: hidden;
+}
+
+.gridContainer {
+  display: grid;
 }
 
 header,
@@ -116,6 +122,37 @@ header,
   gap: 1.5rem;
   align-items: center;
   padding: 2rem 0;
+}
+
+.gridGroup {
+  display: grid;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 45rem) {
+  .gridContainer {
+    max-width: 70rem;
+    gap: 2rem;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      'header header'
+      'main sidebar'
+      'article article';
+  }
+
+  header {
+    grid-area: header;
+  }
+  main {
+    grid-area: main;
+  }
+  section {
+    grid-area: sidebar;
+  }
+  .articleContainer {
+    display: flex;
+    grid-area: article;
+  }
 }
 
 header {
@@ -154,7 +191,7 @@ a:hover {
   display: none;
 }
 
-@media screen and (max-width: 35rem) {
+@media screen and (max-width: 45rem) {
   header {
     padding-top: 0.5rem;
     padding-bottom: 1rem;
