@@ -108,7 +108,7 @@ h6 {
 body {
   display: grid;
   place-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   font-family: var(--fontFamily-Reg);
 
   overflow-x: hidden;
@@ -150,6 +150,11 @@ button:hover {
   font-family: 'LinearIcons';
 }
 
+hr {
+  border: none;
+  border-top: solid;
+}
+
 /* NAV */
 
 header {
@@ -184,6 +189,7 @@ a:hover {
   background-color: white;
   border-radius: 10px;
   font-family: 'LinearIcons';
+  text-transform: lowercase;
 }
 
 .navBackgroup {
@@ -232,17 +238,17 @@ a:hover {
   }
 
   .mobileToggle {
-    display: block;
-    font-family: 'LinearIcons';
+    display: grid;
+    place-items: center;
+    text-align: center;
     color: var(--clr-neutral900);
     font-size: 2rem;
-    padding: 0.5rem 1rem;
+    padding: 1rem 0.5rem;
     z-index: 99;
   }
 
   .mobileToggle:hover {
     background-color: white;
-    font-family: 'LinearIcons';
   }
 }
 
