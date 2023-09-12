@@ -149,6 +149,7 @@ header,
   section {
     grid-area: sidebar;
   }
+
   .articleContainer {
     display: flex;
     grid-area: article;
@@ -189,6 +190,12 @@ a:hover {
 
 .navBackgroup {
   display: none;
+}
+
+section {
+  background-color: var(--clr-neutral900);
+  color: var(--clr-neutral100);
+  padding: 2rem;
 }
 
 @media screen and (max-width: 45rem) {
