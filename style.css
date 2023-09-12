@@ -146,6 +146,10 @@ button:hover {
   background-color: var(--clr-neutral900);
 }
 
+.linear {
+  font-family: 'LinearIcons';
+}
+
 /* NAV */
 
 header {
@@ -179,6 +183,7 @@ a:hover {
   border: none;
   background-color: white;
   border-radius: 10px;
+  font-family: 'LinearIcons';
 }
 
 .navBackgroup {
@@ -229,9 +234,15 @@ a:hover {
   .mobileToggle {
     display: block;
     font-family: 'LinearIcons';
+    color: var(--clr-neutral900);
     font-size: 2rem;
     padding: 0.5rem 1rem;
     z-index: 99;
+  }
+
+  .mobileToggle:hover {
+    background-color: white;
+    font-family: 'LinearIcons';
   }
 }
 
@@ -276,7 +287,7 @@ section p {
 
 @media screen and (min-width: 50rem) {
   .gridContainer {
-    max-width: 70rem;
+    max-width: 75rem;
     grid-template-columns: 2fr 1fr;
     grid-template-areas:
       'header header'
@@ -295,7 +306,6 @@ section p {
   }
 
   .articleContainer {
-    display: flex;
     grid-area: article;
   }
   .mainContent {
@@ -307,9 +317,10 @@ section p {
 /* ARTICLE */
 
 .articleContainer {
-  display: flex;
-  gap: 2rem;
-  padding: 0;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, 22rem);
+  justify-content: space-evenly;
 }
 
 article.flexGroup {
@@ -326,8 +337,13 @@ article.flexGroup {
 
 @media screen and (max-width: 50rem) {
   .articleContainer {
+    display: flex;
     flex-direction: column;
     align-items: start;
+  }
+
+  .articleImg {
+    max-height: 150px;
   }
 }
 
