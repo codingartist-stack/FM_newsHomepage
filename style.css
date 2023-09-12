@@ -190,6 +190,7 @@ a:hover {
   border-radius: 10px;
   font-family: 'LinearIcons';
   text-transform: lowercase;
+  letter-spacing: 0;
 }
 
 .navBackgroup {
@@ -240,10 +241,10 @@ a:hover {
   .mobileToggle {
     display: grid;
     place-items: center;
-    text-align: center;
+    text-align: right;
     color: var(--clr-neutral900);
     font-size: 2rem;
-    padding: 1rem 0.5rem;
+    padding: 1rem 1rem;
     z-index: 99;
   }
 
