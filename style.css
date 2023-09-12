@@ -27,17 +27,17 @@
 
 @font-face {
   font-family: 'InterExBold';
-  src: url(/assets/fonts/static/Inter-ExtraBold.ttf);
+  src: url(assets/fonts/static/Inter-ExtraBold.ttf);
 }
 
 @font-face {
   font-family: 'Moon';
-  src: url(/assets/fonts/IcoMoon/IcoMoon-Free.ttf);
+  src: url(assets/fonts/IcoMoon/IcoMoon-Free.ttf);
 }
 
 @font-face {
   font-family: 'LinearIcons';
-  src: url(/assets/fonts/Linearicons/Linearicons-Free.ttf);
+  src: url(assets/fonts/Linearicons/Linearicons-Free.ttf);
 }
 
 /*
